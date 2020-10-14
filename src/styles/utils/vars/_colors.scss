@@ -1,10 +1,17 @@
 // color variables
 $c-transparent: transparent;
 $c-current: currentColor;
+
+$c-text: #1b1b1b;
+$c-dark-bg: #191919;
+$c-secondary: #dd1b02;
+$c-border: #e5e5e5;
+$c-placeholder: #999999;
+$c-white: #ffffff;
+
 $c-green: #74BF43;
 $c-red: #FD3D3D;
 $c-void: #000;
-$c-white: #fff;
 $c-gray: #8a8989;
 $c-dark: #131313;
 $c-shadow: transparentize($c-void, 0.9); // To avoid different box-shadows in one UI

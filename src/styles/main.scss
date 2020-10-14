@@ -15,6 +15,9 @@
 );
 @include foundation-flex-classes;
 
-// @import "blocks";
-// @import "sections";
+@import 'atomic';
+@import 'base';
+
+@import "blocks/blocks";
+@import "sections/sections";
 @import "animations";

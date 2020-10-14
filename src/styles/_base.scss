@@ -1,0 +1,10 @@
+html {
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: $primary_font;
+    background: $c-dark-bg;
+    color: $c-white;
+}

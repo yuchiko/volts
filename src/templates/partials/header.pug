@@ -1,1 +1,16 @@
-header.header header
+mixin nav_item(label, link)
+    li.nav__item
+        a.nav__link(href=link)= label
+
+
+header.header
+    .grid-container
+        .grid-x
+            .cell
+                nav.nav
+                    ul.nav__list
+                        +nav_item('Про нас', '/about_us')
+                        +nav_item('Послуги', '/services')
+                        +nav_item('Новини', '/news')
+                        li.nav__item.clr-secondary
+                            a(data-fancybox data-src="#fancy-contact-us" href="javascript:;") Зв'язатися з нами
