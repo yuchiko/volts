@@ -16,6 +16,9 @@ $c-gray: #8a8989;
 $c-dark: #131313;
 $c-shadow: transparentize($c-void, 0.9); // To avoid different box-shadows in one UI
 
+$c-primary: $c-dark;
+$c-secondary: $c-green;
+
 // status
 $c-error: $c-red;
 $c-notice: #FFB424;
