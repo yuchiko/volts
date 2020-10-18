@@ -1,6 +1,8 @@
 # ulegal
 Corporative website to sell lawyer services
 
+[Grid rules](https://get.foundation/sites/docs/xy-grid.html)
+
 ## Prerequisites
 
 - yarn

@@ -1,0 +1,13 @@
+// as lg in bootstap container
+@media print, screen and (min-width: 1000px) {
+    .grid-container {
+        max-width: 960px;
+    }
+}
+
+// as xl in bootstap container
+@media print, screen and (min-width: 1200px) {
+    .grid-container {
+        max-width: 1140px;
+    }
+}

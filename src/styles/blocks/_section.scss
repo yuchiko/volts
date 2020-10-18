@@ -1,0 +1,8 @@
+.sc, .section {
+    padding: 10rem 0;
+
+    &--dark {
+        background: $c-dark-bg;
+        color: $c-white;
+    }
+}

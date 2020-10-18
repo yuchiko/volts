@@ -1,5 +1,145 @@
-// colors
+/*  Atomic Styles
+    - - - - - - - - -
+    Table of Contents
+    - - - - - - - - -
+    001.Display
+    002.Paddings and Margins
+    003.Decoration
+    004.Flex
+    005.Colors
+    006.Typography
+    007.Sizes
+    - - - - - - - - -
+ */
+
+
+// 001.Display
+
+.d-flex {
+  display: flex!important;
+}
+
+.d-block {
+  display: block!important;
+}
+
+.d-none {
+  display: none!important;
+}
+
+// 002.Paddings and Margins
+
+$indent_step: 1rem;
+$indent_max: 4; // 0, 4, 8, 12, 16px
+$directions: top, bottom, left, right;
+
+@each $direction in $directions {
+  @for $i from 0 through $indent_max {
+      .p-#{str-slice($direction,0,1)}-#{$i} {
+          padding-#{$direction}: $indent_step * $i!important;
+      }
+      .m-#{str-slice($direction,0,1)}-#{$i} {
+          margin-#{$direction}: $indent_step * $i!important;
+      }
+  }
+}
+
+.p-b-8 {
+  padding-bottom: 8rem;
+}
+
+// 003.Decoration
+
+.ta-center {
+  text-align: center!important;
+}
+
+.ta-left {
+  text-align: left!important;
+}
+
+.ta-right {
+  text-align: right!important;
+}
+
+.tt-u,
+.tt-uppercase {
+  text-transform: uppercase!important;
+}
+
+// 004.Flex
+
+.align-center, 
+.ai-center {
+    align-items: center!important;
+}
+
+.justify-center, 
+.jc-center {
+    justify-content: center!important;
+}
+
+.justify-space-between, 
+.jc-sb {
+    justify-content: space-between!important;
+}
+
+.fd-column {
+    flex-direction: column!important;
+}
+
+
+// 005.Colors
 
 .clr-secondary {
   color: $c-secondary;
+}
+
+// 006.Typography
+
+.fw {
+  &-normal,
+  &-regular {
+    font-weight: $fw_regular;
+  }
+
+  &-medium {
+    font-weight: $fw_medium;
+  }
+  
+  &-bold {
+    font-weight: $fw_bold;
+  }
+}
+
+
+// TODO: move to variables
+.fs {
+
+  &-tips {
+      font-size: 1rem;
+  }
+
+  &-xs {
+      font-size: 1.2rem;
+  }
+
+  &-sm {
+      font-size: 1.4rem;
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+// 007.Sizes
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
 }

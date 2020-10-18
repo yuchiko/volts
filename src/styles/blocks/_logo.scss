@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    
+    &__box {
+        display: flex;
+        flex: 0 0 13rem;
+        height: 13rem;
+        background: $c-secondary;
+        justify-content: center;
+        align-items: center;
+    }
+}
